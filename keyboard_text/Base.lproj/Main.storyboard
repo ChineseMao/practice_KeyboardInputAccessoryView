@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-0M-XpC">
+                                <rect key="frame" x="250" y="120" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2gu-TE-E6h"/>
+                                    <constraint firstAttribute="width" constant="100" id="sEc-af-A61"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb1-f8-ZPX">
+                                <rect key="frame" x="250.5" y="193" width="100" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Zb1-f8-ZPX" firstAttribute="trailing" secondItem="6wU-0M-XpC" secondAttribute="trailing" id="0JK-Ik-od1"/>
+                            <constraint firstItem="6wU-0M-XpC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="94l-Uk-kh4"/>
+                            <constraint firstItem="Zb1-f8-ZPX" firstAttribute="top" secondItem="6wU-0M-XpC" secondAttribute="bottom" constant="43" id="9bu-uB-wrH"/>
+                            <constraint firstItem="Zb1-f8-ZPX" firstAttribute="leading" secondItem="6wU-0M-XpC" secondAttribute="leading" id="T4t-M0-k4x"/>
+                            <constraint firstItem="6wU-0M-XpC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="qmG-lt-QxK"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cGg-xc-HoE" appends="YES" id="icH-cM-m65"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="myTextField" destination="6wU-0M-XpC" id="7kM-iz-xfV"/>
+                        <outlet property="showContent" destination="Zb1-f8-ZPX" id="slr-iP-1Qo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cGg-xc-HoE">
+                    <connections>
+                        <action selector="ending:" destination="BYZ-38-t0r" id="awZ-UD-g3k"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
